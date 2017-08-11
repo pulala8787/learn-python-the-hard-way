@@ -55,8 +55,9 @@ started = 10000
 jelly_beans, jars, crates = secret_formula(started)
 
 # remember that this is another way to format a string
-start_point = start_point / 10
-print(f"With a starting point of: {started}".format(start_point))
+def start_point(started):
+    start_point = start_point / 10
+    print(f"With a starting point of: {started}".format(start_point))
 
 # it's just like with an f"" string.
 print(f"We'd have: {jelly_beans} beans, {jars} jars, and {crates} crates.")
